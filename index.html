@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	
+<div data-role="page">
+	<div data-role="header" data-position="fixed">
+		<h3>영화 조회, 예매 사이트</h3>
+	</div>
+
+	<div data-role="content">
+		<div data-role="tabs">
+			<div data-role="navbar">
+				<ul>
+				<li><a href="#tab1" class="ui-btn-active ui-state-persist">상영정보</a></li>
+				<li><a href="#tab2">예매하기</a></li>
+				<li><a href="#tab3">로그인</a></li>
+				</ul>
+			</div>
+		<div id="tab1">
+		<p></p><br/>			
+		<ul data-role="listview">
+			<li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=177967" target="_blank">
+				<p class="ui-li-aside">상세보기</p>
+				<img src="1.jpg" width="70" height="70">
+				<h3>악인전</h3>
+				<p><strong>개봉일자</strong>: 2019.05.15. (예매율 3위)</p>
+				<p><strong>평점</strong>: ★★★★☆ (8.64)</p>
+				<p><strong>배우/제작진</strong>: 마동석, 김무열, 김성규, 유승목, 최민철 등</p>
+				</a>
+			</li>
+			<li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=136900" target="_blank">
+				<p class="ui-li-aside">상세보기</p>
+				<img src="2.jpg" width="70" height="70">
+				<h3>어벤져스: 엔드게임</h3>
+				<p><strong>개봉일자</strong>: 2019.04.24. (예매율 5위)</p>
+				<p><strong>평점</strong>: ★★★★★ (9.50)</p>
+				<p><strong>배우/제작진</strong>: 로버트 다우니 주니어, 크리스 에반스, 크리스 햄스워스, <br>마크 러팔로, 스칼렛 요한슨, 제레미 레너 등</p>	
+				</a>
+			</li>
+			<li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=180169" target="_blank">
+				<p class="ui-li-aside">상세보기</p>
+				<img src="3.jpg" width="70" height="70">
+				<h3>어린 의뢰인</h3>
+				<p><strong>개봉일자</strong>: 2019.05.22. (예매율 9위)</p>
+				<p><strong>평점</strong>: ★★★★☆ (9.23)</p>
+				<p><strong>배우/제작진</strong>: 이동휘, 유선, 최명빈, 이주원 등</p>			
+				</a>
+			</li>
+			<li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=183132" target="_blank">
+				<p class="ui-li-aside">상세보기</p>
+				<img src="4.jpg" width="70" height="70">
+				<h3>교회오빠</h3>
+				<p><strong>개봉일자</strong>: 2019.05.16. (예매율 8위)</p>
+				<p><strong>평점</strong>: ★★★★★ (9.83)</p>
+				<p><strong>배우/제작진</strong>: 이관희, 오은주, 이소연 등</p>			
+				</a>
+			</li>
+			<li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=163788" target="_blank">
+				<p class="ui-li-aside">상세보기</p>
+				<img src="5.jpg" width="70" height="70">
+				<h3>알라딘</h3>
+				<p><strong>개봉일자</strong>: 2019.05.23. (예매율 2위)</p>
+				<p><strong>평점</strong>: ★★★★★ (9.52)</p>
+				<p><strong>배우/제작진</strong>: 메나 마수드, 윌 스미스, 나오미 스콧, 알란 터딕, 등</p>			
+				</a>
+			</li>
+		</ul>
+		</div>
+		<div id="tab2">			
+		<ul data-role="listview" data-filter="true" data-filter-placeholder="검색하실 영화를 입력하세요.">
+			<li data-role="listdivider">ㄱ<span class="ui-li-count">1</span></li>
+			<li><a href="#">교회오빠</a></li>
+			<li data-role="listdivider">ㅇ<span class="ui-li-count">2</span></</li>
+			<li><a href="#">알라딘</a></li>
+			<li><a href="#">어벤져스: 엔드게임</a></li>	
+			<li><a href="#">어린 의뢰인</a></li>
+			<li><a href="#">악인전</a></li>
+		</ul>
+		</div>
+		<div id="tab3">
+		<img src="login.jpg">
+		</div>
+
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="mintro.html" target="_blank" data-icon="heart">제작자 이력서 보기(새 창)</a></li>
+				<li><a href="https://nid.naver.com/nidlogin.login?url=http%3A%2F%2Fmail.naver.com%2F" target="_blank" data-icon="mail">네이버 메일로 이동(새 창)</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
